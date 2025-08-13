@@ -1,0 +1,133 @@
+/* ===== RESET AND BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  background-color: #eef1f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #2a4365;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #cbd5e0;
+}
+
+/* ===== LAYOUT CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #1a202c;
+}
+
+/* ===== FORMS ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 12px;
+  background-color: #3182ce;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+/* ===== LISTS ===== */
+ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #3182ce;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
